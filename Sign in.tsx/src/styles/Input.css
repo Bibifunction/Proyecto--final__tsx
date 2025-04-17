@@ -1,0 +1,62 @@
+.input-wrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.signin__input {
+  padding: var(--spacing-3) var(--spacing-2); /* 9px 8px */
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-input);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--color-gray);
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.signin__input:focus {
+  outline: none;
+  border-color: var(--color-button);
+  box-shadow: 0 0 0 2px rgba(var(--color-button), 0.1);
+}
+
+.signin__input--error {
+  border-color: var(--color-error);
+}
+
+.signin__input--error:focus {
+  box-shadow: 0 0 0 2px rgba(var(--color-error), 0.1);
+}
+
+.signin__input::placeholder {
+  color: var(--color-gray);
+  font-family: var(--font-input);
+}
+
+.input-error-container {
+  position: absolute;
+  right: 0;
+  top: -1.5rem;
+  height: 0;
+  overflow: visible;
+}
+
+.input-error {
+  color: var(--color-error);
+  font-size: var(--font-size-xs);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 0.25rem;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .signin__input {
+    height: 3rem; /* 48px */
+  }
+}
+
+
+
+  

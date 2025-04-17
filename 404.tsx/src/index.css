@@ -1,0 +1,27 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&display=swap");
+
+:root {
+  --color-background: hsla(173, 43%, 64%, 1);
+  --color-text: hsla(0, 0%, 10%, 1);
+  --color-button: hsla(356, 76%, 78%, 1);
+  --color-button-hover: hsla(355, 100%, 75%, 1);
+  --font-message: "Atkinson Hyperlegible", sans-serif;
+  --border-radius: 0.75rem;
+  --shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+

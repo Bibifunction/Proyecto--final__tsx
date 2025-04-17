@@ -1,0 +1,31 @@
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .form__label {
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-text-dark);
+  }
+  
+  .form__input {
+    padding: 0.5625rem var(--spacing-xs); 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-text-medium);
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  }
+  
+  .form__input:focus {
+    outline: none;
+    border-color: var(--color-button);
+    box-shadow: 0 0 0 1px var(--color-button);
+  }
+  
+  

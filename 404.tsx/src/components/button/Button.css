@@ -1,0 +1,41 @@
+.button {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--font-message);
+    background-color: var(--color-button);
+    color: var(--color-text);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  
+  .button:hover {
+    background-color: var(--color-button-hover);
+    transform: translateY(-0.125rem);
+  }
+  
+  .button:active {
+    transform: translateY(0);
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .button {
+      font-size: 1rem;
+      padding: 0.875rem 1.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .button {
+      padding: 0.75rem 1.5rem;
+    }
+  }
+  
+  
