@@ -1,11 +1,14 @@
-/* Login Component */
-.login {
+
+
+
+
+.signin {
   width: 100%;
   max-width: 62.5rem; /* 1000px */
   padding: 1.25rem; /* 20px */
 }
 
-.login__card {
+.signin__card {
   display: flex;
   background-color: var(--color-white);
   border-radius: 0.5rem; /* 8px */
@@ -15,62 +18,70 @@
   min-height: 35rem; /* 560px */
 }
 
-.login__image-container {
-  width: 50%; /* Ancho fijo del 50% */
-  flex: none; /* Evita que el contenedor se expanda o contraiga */
+.signin__image-container {
+  flex: 1;
+  max-width: 50%;
+  height: 100%; /* Asegura que el contenedor de la imagen tenga la altura completa */
+  position: relative;
 }
 
-.login__image {
+.signin__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  position: absolute; /* Posicionamiento absoluto para llenar el contenedor */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.login__form-container {
-  width: 50%; /* Ancho fijo del 50% */
-  flex: none; /* Evita que el contenedor se expanda o contraiga */
+.signin__form-container {
+  flex: 1;
   padding: 2rem 3rem; /* 32px 48px */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
-.login__title {
+.signin__title {
   font-size: var(--font-size-xl);
   font-weight: 400;
   text-align: center;
   margin-bottom: 3.125rem; /* 50px */
 }
 
-.login__subtitle {
+.signin__subtitle {
   font-size: var(--font-size-lg);
   font-weight: 500;
   margin-bottom: 0.75rem; /* 12px */
 }
 
-.login__form-content {
+.signin__form-content {
   margin-bottom: 3.125rem; /* 50px */
+  flex: 1;
 }
 
-.login__form {
+.signin__form {
   display: flex;
   flex-direction: column;
   gap: 0.75rem; /* 12px */
 }
 
-.login__form-group {
+.signin__form-group {
   display: flex;
   flex-direction: column;
   gap: 0.25rem; /* 4px */
 }
 
-.login__label {
+.signin__label {
   font-size: var(--font-size-sm);
   font-weight: 400;
 }
 
-.login__input {
+.signin__input {
   padding: var(--spacing-3) var(--spacing-2); /* 9px 8px */
   border: 1px solid #e0e0e0;
   border-radius: var(--radius-sm);
@@ -81,19 +92,19 @@
   width: 100%;
 }
 
-.login__input::placeholder {
+.signin__input::placeholder {
   color: var(--color-gray);
   font-family: var(--font-input);
 }
 
-.login__forgot-password {
+.signin__forgot-password {
   align-self: flex-end;
   font-size: var(--font-size-sm);
   color: var(--color-gray);
   margin-top: 0.25rem; /* 4px */
 }
 
-.login__button {
+.signin__button {
   background-color: var(--color-button);
   color: var(--color-white);
   border: none;
@@ -111,7 +122,7 @@
   margin: 1rem auto 0.5rem; /* 16px auto 8px */
 }
 
-.login__signin {
+.signin__login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,21 +132,21 @@
   margin-bottom: 1rem; /* 16px */
 }
 
-.login__signin-link {
+.signin__login-link {
   color: var(--color-gray);
 }
 
-.login__footer {
+.signin__footer {
   padding-top: 0.5rem; /* 8px */
 }
 
-.login__footer-text {
+.signin__footer-text {
   font-size: var(--font-size-xs);
   text-align: center;
   line-height: 1.5;
 }
 
-.login__footer-link {
+.signin__footer-link {
   text-decoration: underline;
 }
 
@@ -144,71 +155,72 @@
   .login__card {
     flex-direction: column;
     min-height: 40rem; /* 640px */
-    max-width: 28.125rem; /* 450px  */
+    max-height: 40rem; /* Altura máxima fija para móvil */
+    max-width: 28.125rem; /* 450px */
     margin: 0 auto;
     padding: 2rem 1.5rem;
   }
 
-  .login__image-container {
+  .signin__image-container {
     display: none;
   }
 
-  .login__form-container {
-    width: 100%;
+  .signin__form-container {
     padding: 1.5rem 1.5rem; /* 24px 24px */
+    width: 100%;
     max-width: 100%;
     gap: 1.5rem; /* 24px */
   }
 
-  .login__title {
+  .signin__title {
     margin-top: 1.5rem; /* 24px */
     margin-bottom: 2rem; /* 32px */
   }
 
-  .login__form-content {
+  .signin__form-content {
     margin-bottom: 2.5rem; /* 40px  */
   }
 
-  .login__form {
+  .signin__form {
     gap: 1.25rem; /* 20px  */
   }
 
-  .login__form-group {
+  .signin__form-group {
     margin-bottom: 0.5rem; /* 8px */
   }
 
-  .login__input {
+  .signin__input {
     height: 3rem; /* 48px  */
   }
 
-  .login__button {
+  .signin__button {
     width: 10rem; /* 160px  */
     height: 3rem; /* 48px */
     margin: 1.5rem auto 1rem; /* 24px auto 16px  */
   }
 
-  .login__footer {
+  .signin__footer {
     margin-top: 2rem; /* 32px */
   }
 }
 
 /* Media Queries para pantallas muy pequeñas */
 @media screen and (max-width: 375px) {
-  .login__card {
+  .signin__card {
     min-height: 38rem; /* 608px */
     padding: 1.5rem 1rem; /* 24px 16px  */
   }
 
-  .login__form-container {
+  .signin__form-container {
     padding: 1rem 1rem; /* 16px 16px */
   }
 
-  .login__title {
+  .signin__title {
     font-size: 2rem; /* 32px */
     margin-top: 1rem; /* 16px  */
   }
 
-  .login__subtitle {
+  .signin__subtitle {
     font-size: 1.125rem; /* 18px */
   }
 }

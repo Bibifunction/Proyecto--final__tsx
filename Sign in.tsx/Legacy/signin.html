@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPlay - Become a PawPlayer</title>
+    <!-- Carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fredoka para toda la página -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Atkinson Hyperlegible solo para los inputs -->
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main class="main">
+        <!-- Resto del HTML se mantiene igual -->
+    </main>
+    <main class="signin">
+        <div class="signin__card">
+            <div class="signin__image-container">
+                <!-- Image placeholder - you'll need to replace this with your actual image -->
+                <img src="imagen1.png" alt="Dog with glasses using a laptop" class="signin__image">
+            </div>
+            <div class="signin__form-container">
+                <div class="signin__form-content">
+                    <h1 class="signin__title">PawPlay</h1>
+                    <h2 class="signin__subtitle">Become a PawPlayer</h2>
+                    
+                    <form class="signin__form">
+                        <div class="signin__form-group">
+                            <label for="name" class="signin__label">Your name</label>
+                            <input type="text" id="name" placeholder="Put your name" class="signin__input">
+                        </div>
+                        
+                        <div class="signin__form-group">
+                            <label for="dog-name" class="signin__label">Your dog's name</label>
+                            <input type="text" id="dog-name" placeholder="Put the name of your dog" class="signin__input">
+                        </div>
+                        
+                        <div class="signin__form-group">
+                            <label for="email" class=signin__label">Email</label>
+                            <input type="email" id="email" placeholder="Put your email" class="signin__input">
+                        </div>
+                        
+                        <div class="signin__form-group">
+                            <label for="password" class="signin__label">Password</label>
+                            <input type="password" id="password" placeholder="Put a strong password" class="signin__input">
+                            <a href="#" class="signin__forgot-password">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+                
+                <div>
+                    <button type="submit" class="signin__button">Login</button>
+                    
+                    <div class="signin__signin">
+                        <span>or</span>
+                        <a href="#" class="signin__login-link">Sign In</a>
+                    </div>
+                    
+                    <footer class="signin__footer">
+                        <p class="signin__footer-text">
+                            By becoming a paw player you agree to our 
+                            <a href="#" class="signin__footer-link">Terms of Service</a> and 
+                            <a href="#" class="signin__footer-link">Privacy Policy</a>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
