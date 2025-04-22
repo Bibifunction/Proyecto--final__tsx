@@ -1,7 +1,7 @@
-import SigninForm from "./components/SigninForm"
-import Header from "./components/Header"
-import "./index.css"
-import "./styles/Header.css"
+import Header from './components/Header';
+import SigninForm from './components/SigninForm';
+import './index.css';
+import './styles/Header.css';
 
 function App() {
   return (
@@ -11,35 +11,7 @@ function App() {
         <SigninForm />
       </div>
     </>
-  )
+  );
 }
 
-export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default App;

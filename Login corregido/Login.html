@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPlay - Login</title>
+    <!-- Código de embed general para todas las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredoka:wght@300..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Código de embed específico para Fredoka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body class="page">
+    <header class="header">
+        <img src="logo.svg" alt="PawPlay Logo" class="header__logo">
+    </header>
+    <main class="main">
+        <div class="modal">
+            <div class="modal__image-container">
+                <img src="Imagen.png" alt="Perro con gafas trabajando en un portátil" class="modal__image">
+            </div>
+            <div class="modal__content">
+                <h1 class="modal__title">PawPlay</h1>
+                <h2 class="modal__subtitle">Become a PawPlayer</h2>
+                
+                <div class="form__content">
+                    <form class="form">
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" class="form__input" placeholder="Put your email">
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="password" class="form__label">Password</label>
+                            <input type="password" id="password" class="form__input" placeholder="Put a strong password">
+                            <a href="#" class="form__forgot-link">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="form__actions">
+                    <button type="submit" class="form__button">Login</button>
+                    
+                    <div class="form__alternative">
+                        <span>or</span>
+                        <a href="#" class="form__sign-in">Sign in</a>
+                    </div>
+                </div>
+                
+                <div class="form__footer">
+                    <p class="form__policy">by become a paw player you agree to our <a href="#" class="form__link">Terms of Services</a> and <a href="#" class="form__link">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
