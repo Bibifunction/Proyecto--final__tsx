@@ -24,7 +24,7 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
@@ -72,7 +72,7 @@
   border: none;
   cursor: pointer;
   text-align: center;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   transition: background-color 0.2s ease;
   outline: none;
 }
@@ -95,5 +95,3 @@
   color: hsla(0, 0%, 10%, 100%);
   line-height: 1;
 }
-
-

@@ -1,0 +1,277 @@
+/* Login specific styles */
+/* Main  */
+.main {
+  width: 100%;
+  max-width: 75rem;
+  padding: 1.25rem; /* 20px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 1.5rem; /* Adjust for header */
+
+}
+
+/* Modal */
+.modal {
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 68.75rem;
+  height: 40rem;
+}
+
+/* Contenedor de imagen */
+.modal__image-container {
+  width: 50%;
+  position: relative;
+  flex: none;
+  overflow: hidden;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+/* Imagen */
+.modal__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+
+/* Contenido */
+.modal__content {
+  width: 50%;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: none;
+}
+
+/* Título */
+.modal__title {
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+  font-family: var(--font-primary);
+}
+
+/* Subtítulo */
+.modal__subtitle {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: var(--color-black);
+  font-family: var(--font-input);
+}
+
+/* Contenedor del formulario */
+.form__content {
+  margin-bottom: 1rem;
+}
+
+/* Formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Grupo de formulario */
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* 4px */
+  margin-bottom: 0.25rem; /* 4px */
+}
+
+/* Etiqueta */
+.form__label {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--color-black);
+  font-family: var(--font-input);
+}
+
+/* Input - Dimensiones exactas */
+.form__input {
+  padding: 0.5rem;
+  border: 1px solid var(--color-text-medium);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-input);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--color-gray);
+  width: 100%;
+  height: 2rem;
+  box-sizing: border-box;
+}
+
+.form__input::placeholder {
+  color: var(--color-text-medium);
+  font-family: var(--font-input);
+}
+
+/* Error message */
+.form__error {
+  color: #e53e3e;
+  font-size: var(--font-size-xs);
+  margin-top: 0.25rem;
+  font-family: var(--font-input);
+}
+
+/* Enlace de olvidó contraseña */
+.form__forgot-link {
+  align-self: flex-end;
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  margin-top: 0.25rem;
+}
+
+.form__forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Acciones del formulario */
+.form__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+/* Botón */
+.form__button {
+  background-color: var(--color-button);
+  color: var(--color-white);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  font-family: var(--font-input);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  cursor: pointer;
+  width: 6rem;
+  height: 2.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Alternativa */
+.form__alternative {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 8px */
+  font-size: var(--font-size-sm);
+  color: var(--color-text-medium);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-input);
+}
+
+/* Enlace Sign In */
+.form__sign-in {
+  color: var(--color-text-medium);
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.form__sign-in:hover {
+  color: var(--color-button);
+}
+
+/* Footer */
+.form__footer {
+  margin-top: 0;
+}
+
+/* Política */
+.form__policy {
+  font-size: var(--font-size-xs);
+  text-align: center;
+  line-height: 1.5;
+  color: var(--color-gray);
+  font-family: var(--font-input);
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* Enlaces de politica */
+.form__link {
+  color: var(--color-button);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.form__link:hover {
+  color: var(--color-black);
+}
+
+/* Media Queries para version movil */
+@media screen and (max-width: 768px) {
+  .modal {
+    flex-direction: column;
+    max-width: 28.125rem;
+    height: auto;
+  }
+
+  .modal__image-container {
+    display: none;
+  }
+
+  .modal__content {
+    padding: 2rem 1.5rem;
+    width: 100%;
+  }
+
+  .modal__title {
+    margin-top: 1rem;
+  }
+
+  .form__button {
+    width: 5.5rem;
+  }
+
+  .form__policy {
+    white-space: normal;
+  }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media screen and (max-width: 375px) {
+  .modal {
+    min-height: auto;
+  }
+
+  .modal__content {
+    padding: 1.5rem 1rem; /* 24px 16px */
+  }
+
+  .modal__title {
+    font-size: 2rem; /* 32px */
+  }
+
+  .modal__subtitle {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+
+  

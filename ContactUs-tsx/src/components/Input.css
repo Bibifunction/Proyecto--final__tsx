@@ -1,0 +1,18 @@
+.form__input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-line);
+    background-color: var(--color-input-bg);
+    font-size: 0.875rem;
+    color: var(--color-text);
+  }
+  
+  .form__input::placeholder {
+    color: var(--color-input-text);
+  }
+  
+  .form__input--textarea {
+    min-height: 8rem;
+    resize: vertical;
+  }

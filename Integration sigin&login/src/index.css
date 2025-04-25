@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+:root {
+  /* Colors */
+ 
+  --color-background-login: hsla(32, 40%, 61%, 1);
+  --color-background-signin: hsla(29, 90%, 76%, 100%);
+  --color-white: hsla(0, 0%, 100%, 100%);
+  --color-black: hsla(0, 0%, 0%, 100%);
+  --color-gray: hsla(0, 0%, 47%, 100%);
+  --color-button: hsla(213, 48%, 49%, 100%);
+  --color-text-dark: hsla(0, 0%, 10%, 1);
+  --color-text-medium: hsla(0, 0%, 47%, 1);
+
+  /* Font families */
+  --font-primary: "Fredoka", sans-serif;
+  --font-input: "Atkinson Hyperlegible", sans-serif;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 2.25rem; /* 36px */
+
+  /* Spacing */
+  --spacing-1: 0.25rem; /* 4px */
+  --spacing-2: 0.5rem; /* 8px */
+  --spacing-3: 0.563rem; /* 9px */
+  --spacing-4: 1.375rem; /* 22px */
+  --spacing-5: 1.5rem; /* 24px */
+
+  /* Border radius */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-full: 3.125rem; /* 50px */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Update the body and html styles to prevent scrolling */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos base para botones */
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Estilos base para inputs */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+
+
+
+

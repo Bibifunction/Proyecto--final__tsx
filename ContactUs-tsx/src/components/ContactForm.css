@@ -1,0 +1,91 @@
+/* Form */
+.form {
+  width: 100%;
+}
+
+.form__group {
+  margin-bottom: 1rem;
+}
+
+.form__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-line);
+  background-color: var(--color-input-bg);
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.form__input::placeholder {
+  color: var(--color-input-text);
+}
+
+.form__input--textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Spinner de carga */
+.spinner {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mensaje de éxito */
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  .form__group {
+    margin-bottom: 1rem;
+  }
+
+  .form__input--textarea {
+    min-height: 7rem;
+  }
+
+  .button--brown {
+    padding: 0.5rem 1.25rem;
+  }
+
+  .form__submit {
+    margin-top: 1.5rem;
+  }
+}
+
+
+  

@@ -1,0 +1,78 @@
+/* Common Input Styles for all forms */
+.input-group,
+.signin__form-group,
+.form__group,
+.forgot-password__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* 4px */
+  margin-bottom: 0.25rem; /* 4px */
+  width: 100%;
+}
+
+.input-label,
+.signin__label,
+.form__label,
+.forgot-password__label {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--color-black);
+  font-family: var(--font-input);
+}
+
+.input-field,
+.signin__input,
+.form__input,
+.forgot-password__input {
+  padding: 0.5rem;
+  border: 1px solid var(--color-text-medium);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-input);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--color-gray);
+  width: 100%;
+  height: 2rem;
+  box-sizing: border-box;
+}
+
+.input-field::placeholder,
+.signin__input::placeholder,
+.form__input::placeholder,
+.forgot-password__input::placeholder {
+  color: var(--color-text-medium);
+  font-family: var(--font-input);
+}
+
+.input-field--error,
+.signin__input--error,
+.form__input--error,
+.forgot-password__input--error {
+  border-color: #e53e3e;
+}
+
+.input-error,
+.signin__error,
+.form__error,
+.forgot-password__error {
+  color: #e53e3e;
+  font-size: var(--font-size-xs);
+  margin-top: 0.25rem;
+  font-family: var(--font-input);
+}
+
+/* Forgot password link */
+.form__forgot-link {
+  align-self: flex-end;
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  margin-top: 0.25rem;
+}
+
+.form__forgot-link:hover {
+  text-decoration: underline;
+}
+

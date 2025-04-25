@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paw in Touch - Contact Us</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&family=Atkinson+Hyperlegible:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+      <img src="logo.svg" alt="Logo" class="header__logo">
+      <div class="header__actions">
+          <button class="button button--yellow">Create event</button>
+          <a href="#" class="header__sign-in">Sign in</a>
+          <button class="header__menu-toggle" id="menuToggle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="4" width="24" height="2" fill="black"/>
+                  <rect y="11" width="24" height="2" fill="black"/>
+                  <rect y="18" width="24" height="2" fill="black"/>
+              </svg>
+          </button>
+      </div>
+  </header>
+
+  <div class="menu-modal" id="menuModal">
+      <div class="menu-modal__content">
+          <button class="menu-modal__close" id="menuClose">
+              <img src="close-thick.svg" alt="Close" class="menu-modal__close-icon">
+          </button>
+          <div class="menu-modal__items">
+              <!-- Grupo 1: My account y My events -->
+              <div class="menu-modal__group">
+                  <a href="#" class="menu-modal__item">My account</a>
+                  <a href="#" class="menu-modal__item">My events</a>
+              </div>
+              <div class="menu-modal__separator"></div>
+              
+              <!-- Grupo 2: Create event -->
+              <div class="menu-modal__group">
+                  <a href="#" class="menu-modal__item">Create event</a>
+              </div>
+              <div class="menu-modal__separator"></div>
+              
+              <!-- Grupo 3: About us y Contact us -->
+              <div class="menu-modal__group">
+                  <a href="#" class="menu-modal__item">About us</a>
+                  <a href="#" class="menu-modal__item">Contact us</a>
+              </div>
+              <div class="menu-modal__separator"></div>
+              
+              <!-- Grupo 4: Log out -->
+              <div class="menu-modal__group">
+                  <a href="#" class="menu-modal__item">Log out</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <main class="main">
+      <div class="contact-modal">
+          <div class="contact-modal__image">
+              <div class="contact-modal__image-container">
+                  <img src="imagen.png" alt="Dog with headphones" class="contact-modal__img">
+              </div>
+          </div>
+          <div class="contact-modal__form">
+              <h1 class="contact-modal__title">Paw in touch</h1>
+              <p class="contact-modal__subtitle">Leave your paw print! Write to us and let's create some buzz.</p>
+              
+              <form class="form" id="contactForm">
+                  <div class="form__group">
+                      <label for="name" class="form__label">Your name</label>
+                      <input type="text" id="name" class="form__input" placeholder="Put your name" required>
+                  </div>
+                  
+                  <div class="form__group">
+                      <label for="email" class="form__label">Email</label>
+                      <input type="email" id="email" class="form__input" placeholder="Put your email" required>
+                  </div>
+                  
+                  <div class="form__group">
+                      <label for="message" class="form__label">Message</label>
+                      <textarea id="message" class="form__input form__input--textarea" placeholder="Write your message" required></textarea>
+                  </div>
+                  
+                  <div class="form__submit">
+                      <button type="submit" class="button button--brown" id="sendButton">
+                          <span>Send</span>
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </main>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Menú modal
+          const menuToggle = document.getElementById('menuToggle');
+          const menuModal = document.getElementById('menuModal');
+          const menuClose = document.getElementById('menuClose');
+          
+          menuToggle.addEventListener('click', function(e) {
+              menuModal.classList.add('menu-modal--active');
+              e.preventDefault(); // Prevenir comportamiento por defecto
+              e.stopPropagation(); // Detener propagación
+          });
+          
+          menuClose.addEventListener('click', function() {
+              menuModal.classList.remove('menu-modal--active');
+          });
+          
+          // Formulario con spinner y mensaje de éxito
+          const form = document.getElementById('contactForm');
+          const sendButton = document.getElementById('sendButton');
+          
+          form.addEventListener('submit', function(event) {
+              event.preventDefault();
+              
+              // Mostrar spinner
+              const buttonText = sendButton.querySelector('span');
+              buttonText.innerHTML = '<div class="spinner"></div> Sending...';
+              sendButton.disabled = true;
+              
+              // Simular envío (2 segundos)
+              setTimeout(function() {
+                  // Mostrar mensaje de éxito
+                  buttonText.innerHTML = '<div class="success-message">Message sent</div>';
+                  
+                  // Resetear formulario después de 3 segundos
+                  setTimeout(function() {
+                      form.reset();
+                      buttonText.textContent = 'Send';
+                      sendButton.disabled = false;
+                  }, 3000);
+              }, 2000);
+          });
+      });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,79 @@
+/* Common Button Styles for all forms */
+.button,
+.signin__button,
+.form__button,
+.forgot-password__button {
+  background-color: var(--color-button);
+  color: var(--color-white);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  font-family: var(--font-input);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  cursor: pointer;
+  width: 6rem;
+  height: 2.8rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover,
+.signin__button:hover,
+.form__button:hover,
+.forgot-password__button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active,
+.signin__button:active,
+.form__button:active,
+.forgot-password__button:active {
+  transform: translateY(1px);
+}
+
+/* Add disabled state for buttons */
+.button:disabled,
+.signin__button:disabled,
+.form__button:disabled,
+.forgot-password__button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Button sizes */
+.button--small,
+.signin__button--small,
+.form__button--small,
+.forgot-password__button--small {
+  width: 5rem;
+  height: 2.4rem;
+}
+
+.button--medium,
+.signin__button--medium,
+.form__button--medium,
+.forgot-password__button--medium {
+  width: 6rem;
+  height: 2.8rem;
+}
+
+.button--large,
+.signin__button--large,
+.form__button--large,
+.forgot-password__button--large {
+  width: 8rem;
+  height: 3rem;
+}
+
+/* Forgot password button is larger by default */
+.forgot-password__button {
+  width: 8rem;
+}
+
+
+
