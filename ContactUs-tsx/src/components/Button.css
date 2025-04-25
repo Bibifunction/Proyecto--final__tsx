@@ -1,35 +1,27 @@
 /* Buttons */
 .button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-lg);
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .button--yellow {
-    background-color: var(--color-button-yellow);
-    color: var(--color-black);
-    height: 2rem;
-  }
-  
-  .button--brown {
-    background-color: var(--color-button-brown);
-    color: var(--color-white);
-    width: auto;
-    height: auto;
-    padding: 0.5rem 1.5rem;
-    border-radius: 2rem;
-  }
-  
-  
- 
-  
-  
-  
-  
-  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button--yellow {
+  background-color: var(--color-button-yellow);
+  color: var(--color-black);
+  height: 2rem;
+}
+
+.button--brown {
+  background-color: var(--color-button-brown);
+  color: var(--color-white);
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+}
