@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import ContactPage from "./pages/contactpage/ContactPage"
 import SignInPage from "./pages/signinpage/SignInPage"

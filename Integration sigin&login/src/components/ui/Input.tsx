@@ -1,4 +1,3 @@
-
 import "./Input.css"
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
