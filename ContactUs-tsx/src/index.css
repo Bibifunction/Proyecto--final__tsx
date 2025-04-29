@@ -5,7 +5,7 @@
   --color-text: hsla(0, 0%, 10%, 100%);
   --color-text-light: hsla(0, 0%, 47%, 100%);
   --color-line: hsla(0, 0%, 64%, 100%);
-  --color-background: hsla(31, 28%, 39%, 100%); /* Fondo marrón exacto */
+  --color-background: hsla(31, 28%, 39%, 100%); 
   --color-input-bg: hsla(0, 0%, 100%, 100%);
   --color-input-text: hsla(0, 0%, 47%, 100%);
   --color-button-brown: hsla(26, 20%, 50%, 100%);

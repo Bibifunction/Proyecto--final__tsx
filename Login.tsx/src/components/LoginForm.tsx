@@ -1,73 +1,73 @@
-"use client"
+'use client';
 
-import { useState, type FormEvent } from "react"
-import "./styles/LoginForm.css"
-import dogImage from "../assets/imagen.png"
-import ForgotPasswordModal from "./ForgotPasswordModal"
-import { validateEmail, validatePassword } from "./utils/validation"
+import { useState, type FormEvent } from 'react';
+import dogImage from '../assets/imagen.png';
+import ForgotPasswordModal from './ForgotPasswordModal';
+import './styles/LoginForm.css';
+import { validateEmail, validatePassword } from './utils/validation';
 
 export default function LoginForm() {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [emailError, setEmailError] = useState("")
-  const [passwordError, setPasswordError] = useState("")
-  const [showForgotPassword, setShowForgotPassword] = useState(false)
-  const [isLoading, setIsLoading] = useState(false)
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+    e.preventDefault();
 
     // Validar campos antes de enviar
-    let isValid = true
+    let isValid = true;
 
     // Validar email
     if (!validateEmail(email)) {
-      setEmailError("Please enter a valid email address")
-      isValid = false
+      setEmailError('Please enter a valid email address');
+      isValid = false;
     } else {
-      setEmailError("")
+      setEmailError('');
     }
 
     // Validar contraseña
     if (!validatePassword(password)) {
-      setPasswordError("Password must be at least 8 characters long")
-      isValid = false
+      setPasswordError('Password must be at least 8 characters long');
+      isValid = false;
     } else {
-      setPasswordError("")
+      setPasswordError('');
     }
 
-    if (!isValid) return
+    if (!isValid) return;
 
-    setIsLoading(true) // Activar el spinner
+    setIsLoading(true); // Activar el spinner
 
     // Simulamos una carga de 2 segundos
     try {
       // Aquí iría la lógica real de autenticación
-      console.log("Login with:", { email, password })
-      await new Promise((resolve) => setTimeout(resolve, 2000))
+      console.log('Login with:', { email, password });
+      await new Promise((resolve) => setTimeout(resolve, 2000));
 
       // Aqui procesariamos la respuesta del servidor
-      console.log("Login successful!")
+      console.log('Login successful!');
 
       // Desactivar el spinner después de la carga
-      setIsLoading(false)
+      setIsLoading(false);
     } catch (error) {
-      console.error("Login error:", error)
-      setIsLoading(false) 
+      console.error('Login error:', error);
+      setIsLoading(false);
     }
-  }
+  };
 
   const handleSignIn = () => {
-    console.log("Sign In clicked")
+    console.log('Sign In clicked');
     // Aquí la logica para redirigir a la página de registro
-  }
+  };
 
   return (
     <>
       <div className="modal">
         <div className="modal__image-container">
           <img
-            src={dogImage || "/placeholder.svg"}
+            src={dogImage || '/placeholder.svg'}
             alt="Perro con gafas trabajando en un portátil"
             className="modal__image"
           />
@@ -84,13 +84,15 @@ export default function LoginForm() {
               <input
                 type="email"
                 id="email"
-                className={`form__input ${emailError ? "form__input--error" : ""}`}
+                className={`form__input ${
+                  emailError ? 'form__input--error' : ''
+                }`}
                 placeholder="Put your email"
                 value={email}
                 onChange={(e) => {
-                  setEmail(e.target.value)
+                  setEmail(e.target.value);
                   if (emailError && validateEmail(e.target.value)) {
-                    setEmailError("")
+                    setEmailError('');
                   }
                 }}
                 required
@@ -106,25 +108,29 @@ export default function LoginForm() {
               <input
                 type="password"
                 id="password"
-                className={`form__input ${passwordError ? "form__input--error" : ""}`}
+                className={`form__input ${
+                  passwordError ? 'form__input--error' : ''
+                }`}
                 placeholder="Put a strong password"
                 value={password}
                 onChange={(e) => {
-                  setPassword(e.target.value)
+                  setPassword(e.target.value);
                   if (passwordError && validatePassword(e.target.value)) {
-                    setPasswordError("")
+                    setPasswordError('');
                   }
                 }}
                 required
                 disabled={isLoading}
               />
-              {passwordError && <span className="form__error">{passwordError}</span>}
+              {passwordError && (
+                <span className="form__error">{passwordError}</span>
+              )}
               <a
                 href="#"
                 className="form__forgot-link"
                 onClick={(e) => {
-                  e.preventDefault()
-                  if (!isLoading) setShowForgotPassword(true)
+                  e.preventDefault();
+                  if (!isLoading) setShowForgotPassword(true);
                 }}
               >
                 Forgot password?
@@ -137,7 +143,7 @@ export default function LoginForm() {
                   <div className="spinner__circle"></div>
                 </div>
               ) : (
-                "Login"
+                'Log in'
               )}
             </button>
 
@@ -145,19 +151,20 @@ export default function LoginForm() {
               href="#"
               className="form__sign-in-link"
               onClick={(e) => {
-                e.preventDefault()
-                handleSignIn()
+                e.preventDefault();
+                handleSignIn();
               }}
             >
-              <span className="or-text">or</span> <span className="sign-in-text">Sign In</span>
+              <span className="or-text">or</span>{' '}
+              <span className="sign-in-text">Sign in</span>
             </a>
 
             <p className="form__policy">
-              by become a paw player you agree to our{" "}
+              by become a paw player you agree to our{' '}
               <a href="#" className="form__link">
                 Terms of Services
-              </a>{" "}
-              and{" "}
+              </a>{' '}
+              and{' '}
               <a href="#" className="form__link">
                 Privacy Policy
               </a>
@@ -167,26 +174,12 @@ export default function LoginForm() {
       </div>
 
       {showForgotPassword && (
-        <ForgotPasswordModal email={email} onEmailChange={setEmail} onClose={() => setShowForgotPassword(false)} />
+        <ForgotPasswordModal
+          email={email}
+          onEmailChange={setEmail}
+          onClose={() => setShowForgotPassword(false)}
+        />
       )}
     </>
-  )
+  );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

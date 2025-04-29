@@ -1,0 +1,16 @@
+/* Main Content */
+.main {
+  padding-top: 4rem;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 75rem; /* 1200px */
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+
+
+  

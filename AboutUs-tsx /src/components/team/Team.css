@@ -1,0 +1,78 @@
+/* Team Section */
+.team-section {
+  max-width: 1200px;
+  margin: 0 auto 6rem auto;
+}
+
+.team-container {
+  background-color: var(--color-team-bg);
+  padding: 5rem 2rem 1.5rem 2rem;
+  position: relative;
+  height: 30rem; /* Aumentado para dar más altura al contenedor */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-tag {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  left: 7%;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Reducido el espacio entre imágenes */
+  margin: 0 auto;
+  padding-top: 0;
+  width: 90%; /* Reducido el ancho para que las imágenes estén más juntas */
+}
+
+.team-member {
+  width: 35%; /* Aumentado el tamaño de las imágenes */
+  aspect-ratio: 0.9; /* Para cambiar los cards de imagenes*/
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: var(--color-white);
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; /* Ajustado para mostrar más las cabezas */
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .team-member {
+    width: 60%;
+  }
+
+  .team-tag {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member {
+    width: 80%;
+  }
+}

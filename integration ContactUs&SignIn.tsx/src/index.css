@@ -1,0 +1,184 @@
+/* Font imports */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+
+}
+
+:root {
+  /* Colors */
+  --color-white: hsla(0, 0%, 100%, 100%);
+  --color-black: hsla(0, 0%, 0%, 100%);
+  --color-gray: hsla(0, 0%, 47%, 100%);
+  --color-button: hsla(213, 48%, 49%, 100%); /* Color azul para botones y enlaces */
+  --color-error: hsla(0, 80%, 50%, 100%);
+  --color-button-yellow: hsla(50, 100%, 55%, 100%);
+  --color-button-brown: hsla(26, 20%, 50%, 100%);
+  --color-text: hsla(0, 0%, 10%, 100%);
+  --color-text-light: hsla(0, 0%, 47%, 100%);
+  --color-text-dark: hsla(240, 6%, 9%, 100%);
+  --color-line: hsla(0, 0%, 64%, 100%);
+  --color-input-bg: hsla(0, 0%, 100%, 100%);
+  --color-input-text: hsla(0, 0%, 47%, 100%);
+  --color-background-contact: hsla(31, 28%, 39%, 100%);
+  --color-background-signin: hsla(29, 90%, 76%, 100%);
+
+  /* Font families */
+  --font-primary: "Fredoka", sans-serif;
+  --font-input: "Atkinson Hyperlegible", sans-serif;
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-atkinson: "Atkinson Hyperlegible", sans-serif;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 2.25rem; /* 36px */
+  --font-size-md: 1.25rem; /* 20px */
+
+  /* Spacing */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 0.875rem; /* 14px */
+  --spacing-md: 1.5rem; /* 24px */
+  --spacing-lg: 2.625rem; /* 42px */
+  --spacing-1: 0.25rem; /* 4px */
+  --spacing-2: 0.5rem; /* 8px */
+  --spacing-3: 0.563rem; /* 9px */
+  --spacing-4: 1.375rem; /* 22px */
+  --spacing-5: 1.5rem; /* 24px */
+
+  /* Border radius */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.875rem; /* 14px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-full: 3.125rem; /* 50px */
+
+  /* Shadows */
+  --shadow-modal: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Mejor manera de manejar el overflow sin !important */
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  font-family: var(--font-primary);
+  color: var(--color-black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page-specific background colors */
+body.contact-page {
+  background-color: var(--color-background-contact);
+}
+
+body.signin-page {
+  background-color: var(--color-background-signin);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App container styles */
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Main Content */
+.main {
+  padding-top: 3.5rem;
+  min-height: calc(100vh - 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Signin page container */
+.signin-page-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem; /* Para dejar espacio para el header */
+  overflow: hidden;
+}
+
+/* Contact page container */
+.contact-page-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem; /* Para dejar espacio para el header */
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

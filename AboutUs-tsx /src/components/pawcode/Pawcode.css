@@ -1,0 +1,54 @@
+/* Paw Code Section */
+.pawcode-section {
+  max-width: 1200px;
+  margin: 0 auto 6rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.pawcode-tag {
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+  align-self: start;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.code-items {
+  grid-column: 2;
+  margin-top: 0;
+}
+
+.code-item {
+  margin-bottom: 2rem;
+}
+
+.code-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+}
+
+.code-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .pawcode-section {
+    grid-template-columns: 1fr;
+  }
+
+  .pawcode-tag {
+    margin-bottom: 1.5rem;
+  }
+
+  .code-items {
+    grid-column: 1;
+  }
+}

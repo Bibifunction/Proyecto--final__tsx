@@ -1,17 +1,15 @@
 /* Modal */
 .modal {
   display: flex;
-  max-width: 62.5rem; 
-  width: 100%;
+  width: 66rem;
   border-radius: var(--radius-md); 
   overflow: hidden;
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
   background-color: var(--color-white);
-  margin: 0 auto; 
-  margin-top: 2vh; 
+  margin: 2rem auto; 
   position: relative;
-  height: auto; 
-  max-height: 90vh; 
+  min-height: 35rem;
+ 
 }
 
 .modal__image-container {
@@ -194,7 +192,7 @@
   line-height: 1;
   color: var(--color-text-medium);
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.12rem;
   display: block;
   text-decoration: none;
   cursor: pointer;
@@ -204,6 +202,7 @@
 
 .or-text {
   color: var(--color-text-medium);
+ 
 }
 
 
@@ -228,13 +227,14 @@
 
 .form__link {
   color: var(--color-button);
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .form__link:hover {
-  color: var(--color-text-dark);
+  color: var(--color-button);
+  text-decoration: underline;
 }
 
 /* Spinner */

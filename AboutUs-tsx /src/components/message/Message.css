@@ -1,0 +1,22 @@
+/* Message Section */
+.message-container {
+  background-color: var(--color-message-bg);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  margin: 0 auto 6rem auto;
+  max-width: 650px;
+}
+
+.message-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-black);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .message-container {
+    padding: 1.5rem;
+    margin: 0 1rem 3rem 1rem;
+  }
+}

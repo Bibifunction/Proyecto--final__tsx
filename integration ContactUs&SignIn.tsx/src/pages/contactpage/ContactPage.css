@@ -1,0 +1,138 @@
+/* Contact Modal */
+.contact-modal {
+  display: flex;
+  width: 66rem;
+  min-height: 35rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1rem auto;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+}
+
+.contact-modal__image {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-modal__image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.contact-modal__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  display: block;
+  position: absolute; /* Posicionamiento absoluto para cubrir todo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contact-modal__form {
+  flex: 1;
+  max-width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: var(--color-white);
+  margin-bottom: 2rem;
+}
+
+.contact-modal__title {
+  font-family: var(--font-fredoka);
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 1.5rem;
+  align-self: center;
+}
+
+.contact-modal__subtitle {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: left;
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  width: 100%;
+  font-family: var(--font-atkinson); /* Cambiado a Atkinson Hyperlegible */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .contact-modal {
+    width: 90%;
+    max-height: 80vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-modal__subtitle {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-modal {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .contact-modal__image,
+  .contact-modal__form {
+    max-width: 100%;
+  }
+
+  .contact-modal__image {
+    height: 15rem;
+  }
+
+  .contact-modal__img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-modal__image {
+    display: none;
+  }
+
+  .contact-modal {
+    width: 85%;
+    max-width: 20rem;
+    border-radius: var(--radius-md);
+    margin: 1rem auto;
+    height: auto;
+  }
+
+  .contact-modal__form {
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--radius-md);
+    min-height: 28rem;
+  }
+
+  .contact-modal__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-modal__subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+  

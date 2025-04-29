@@ -1,0 +1,94 @@
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: var(--color-white);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.header__logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+/*  estilos para botones y menu hamburguesa */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.header__sign-in {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.header__menu-toggle {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.header__menu-toggle:active,
+.header__menu-toggle:focus {
+  background: transparent;
+  outline: none;
+}
+
+/* Buttons */
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.button--yellow {
+  background-color: var(--color-button-yellow);
+  color: var(--color-black);
+  height: 2rem;
+}
+
+.button--brown {
+  background-color: var(--color-button-brown);
+  color: var(--color-white);
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+}
+
+/* Media Queries para Responsive - Header */
+@media (max-width: 768px) {
+  .header__sign-in {
+    display: none;
+  }
+
+  .button--yellow {
+    display: none;
+  }
+
+  .header__menu-toggle {
+    display: block;
+  }
+}

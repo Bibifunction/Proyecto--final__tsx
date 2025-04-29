@@ -1,0 +1,31 @@
+/* Specific styles for the SignIn page */
+.signin-page-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* Background color is set via body class in the component */
+body.signin-page {
+  background-color: var(--color-background-signin);
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .signin-page-container {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .signin-page-container {
+    padding: 0 0.5rem;
+  }
+}
+
+
+
+  
