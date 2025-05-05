@@ -25,7 +25,7 @@
     width: 100%;
     height: auto;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+  
   }
   
   .error-page__message {

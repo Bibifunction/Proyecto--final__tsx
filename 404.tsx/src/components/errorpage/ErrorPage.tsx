@@ -11,7 +11,7 @@ interface ErrorPageProps {
 }
 
 function ErrorPage({
-  imageUrl = "/src/assets/img.jpg",
+  imageUrl = "/src/assets/404.png",
   imageAlt = "404 - Confused dog with torn papers",
   message = "Oops! Looks like you've lost your paw.",
   buttonText = "Lead Me Home",
