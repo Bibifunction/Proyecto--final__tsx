@@ -1,0 +1,135 @@
+/* Estilos del modal */
+.modal {
+  width: 250px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.modal__close-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Estilos de los filtros */
+.filter {
+  padding: 0 16px;
+}
+
+.filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.filter__title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.filter__chevron,
+.filter__calendar {
+  width: 20px;
+  height: 20px;
+}
+
+.filter__content {
+  display: none;
+  padding-bottom: 16px;
+}
+
+.filter__content--open {
+  display: block;
+}
+
+.filter__option {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.filter__option:hover {
+  background-color: var(--hover-color);
+}
+.filter__option:hover .filter__checkbox-custom {
+  border-color: hsla(320, 91%, 35%, 100%);
+}
+
+.filter__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.filter__checkbox-custom {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid hsla(0, 0%, 0%, 100%);
+  border-radius: 2px;
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.filter__check {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  display: none;
+}
+
+.filter__checkbox:checked + .filter__checkbox-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.filter__checkbox:checked + .filter__checkbox-custom .filter__check {
+  display: block;
+}
+
+.filter__label {
+  font-size: 14px;
+}
+
+.filter__separator {
+  width: 210px;
+  height: 1px;
+  background-color: var(--separator-color);
+  margin-bottom: 0;
+}
+
+.filter__more,
+.filter__less {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 0;
+  text-align: left;
+  width: 100%;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros Modal</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__header">
+            <button class="modal__close">
+                <img src="close-thick.svg" alt="Cerrar" class="modal__close-icon">
+            </button>
+        </div>
+
+        <div class="filter">
+            <div class="filter__header filter__header--open">
+                <h3 class="filter__title">Type of activity</h3>
+                <img src="chevron-up.svg" alt="Contraer" class="filter__chevron">
+            </div>
+            <div class="filter__content filter__content--open">
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Social event</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Outdoors</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Walks</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Private property</span>
+                </label>
+            </div>
+            <div class="filter__separator"></div>
+        </div>
+
+        <div class="filter">
+            <div class="filter__header">
+                <h3 class="filter__title">Dog size</h3>
+                <img src="chevron-down.svg" alt="Expandir" class="filter__chevron">
+            </div>
+            <div class="filter__content">
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Big</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Medium</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Small</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Any</span>
+                </label>
+            </div>
+            <div class="filter__separator"></div>
+        </div>
+
+        <div class="filter">
+            <div class="filter__header">
+                <h3 class="filter__title">Breed</h3>
+                <img src="chevron-down.svg" alt="Expandir" class="filter__chevron">
+            </div>
+            <div class="filter__content">
+                <!-- Opciones iniciales -->
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Any</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Yorkshire Terrier</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Shih Tzu</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">French Bulldog</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Labrador Retriever</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">German Shepherd</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Rottweiler</span>
+                </label>
+                <label class="filter__option">
+                    <input type="checkbox" class="filter__checkbox">
+                    <span class="filter__checkbox-custom">
+                        <img src="check.svg" alt="Seleccionado" class="filter__check">
+                    </span>
+                    <span class="filter__label">Poodle</span>
+                </label>
+                <button class="filter__more">+ More</button>
+                
+                <!-- Opciones extendidas (inicialmente ocultas) -->
+                <div class="filter__extended-options" style="display: none;">
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Dachshund</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Bulldog</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Cavalier King Charles Spaniel</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Yorkshire Terrier</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Shiba Inu</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Chihuahua</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Havanese</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Beagle</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Maltese</span>
+                    </label>
+                    <label class="filter__option">
+                        <input type="checkbox" class="filter__checkbox">
+                        <span class="filter__checkbox-custom">
+                            <img src="check.svg" alt="Seleccionado" class="filter__check">
+                        </span>
+                        <span class="filter__label">Cocker Spaniel</span>
+                    </label>
+                    <button class="filter__less">— Less</button>
+                </div>
+            </div>
+            <div class="filter__separator"></div>
+        </div>
+
+        <div class="filter">
+            <div class="filter__header">
+                <h3 class="filter__title">Date</h3>
+                <img src="calendar.svg" alt="Calendario" class="filter__calendar">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Manejar clics en los encabezados de filtro
+            const filterHeaders = document.querySelectorAll('.filter__header');
+            
+            filterHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    // No hacer nada si es el encabezado de fecha
+                    if (this.querySelector('.filter__calendar')) {
+                        return;
+                    }
+                    
+                    const content = this.nextElementSibling;
+                    const chevron = this.querySelector('.filter__chevron');
+                    
+                    // Alternar la clase para mostrar/ocultar el contenido
+                    this.classList.toggle('filter__header--open');
+                    content.classList.toggle('filter__content--open');
+                    
+                    // Cambiar el icono del chevron
+                    if (content.classList.contains('filter__content--open')) {
+                        chevron.src = 'chevron-up.svg';
+                    } else {
+                        chevron.src = 'chevron-down.svg';
+                    }
+                });
+            });
+
+            // Manejar botones More/Less
+            const moreButton = document.querySelector('.filter__more');
+            const lessButton = document.querySelector('.filter__less');
+            const extendedOptions = document.querySelector('.filter__extended-options');
+
+            if (moreButton && lessButton && extendedOptions) {
+                moreButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    extendedOptions.style.display = 'block';
+                    moreButton.style.display = 'none';
+                });
+
+                lessButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    extendedOptions.style.display = 'none';
+                    moreButton.style.display = 'block';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
