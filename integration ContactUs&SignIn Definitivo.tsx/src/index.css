@@ -1,0 +1,140 @@
+:root {
+  /* Colors */
+  --color-white: hsla(0, 0%, 100%, 100%);
+  --color-black: hsla(0, 0%, 0%, 100%);
+  --color-gray: hsla(0, 0%, 47%, 100%);
+  --color-button: hsla(213, 48%, 49%, 100%); /* Color azul para botones y enlaces */
+  --color-error: hsla(0, 80%, 50%, 100%);
+  --color-button-yellow: hsla(50, 100%, 55%, 100%);
+  --color-button-brown: hsla(26, 20%, 50%, 100%);
+  --color-text: hsla(0, 0%, 10%, 100%);
+  --color-text-light: hsla(0, 0%, 47%, 100%);
+  --color-text-dark: hsla(240, 6%, 9%, 100%);
+  --color-text-medium: hsla(0, 0%, 47%, 100%);
+  --color-line: hsla(0, 0%, 64%, 100%);
+  --color-input-bg: hsla(0, 0%, 100%, 100%);
+  --color-input-text: hsla(0, 0%, 47%, 100%);
+  --color-background-contact: hsla(31, 28%, 39%, 100%);
+  --color-background-signin: hsla(29, 90%, 76%, 100%);
+  --color-background-login: hsla(32, 40%, 61%, 1);
+  
+  /* Font sizes */
+  --font-size-xs: 12px; 
+  --font-size-sm: 14px; 
+  --font-size-base: 16px; 
+  --font-size-lg: 20px; 
+  --font-size-xl: 36px; 
+
+  /* Spacing */
+  --spacing-xs: 8px; 
+  --spacing-sm: 14px; 
+  --spacing-md: 22px; 
+  --spacing-lg: 24px; 
+  --spacing-xl: 40px; 
+  --spacing-1: 4px; 
+  --spacing-2: 8px; 
+  --spacing-3: 12px; 
+  --spacing-5: 20px; 
+
+  /* Border radius */
+  --radius-sm: 4px; 
+  --radius-md: 14px; 
+  --radius-lg: 24px; 
+  --radius-full: 50px; 
+
+  /* Shadows */
+  --shadow-modal: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  /* Fonts */
+  --font-primary: "Atkinson Hyperlegible", sans-serif;
+  --font-input: "Atkinson Hyperlegible", sans-serif;
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-atkinson: "Atkinson Hyperlegible", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background-login);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: hidden; 
+  overflow-x: hidden; 
+}
+
+/* Specific background colors for each page */
+body.signin-page {
+  background-color: var(--color-background-signin);
+}
+
+body.login-page {
+  background-color: var(--color-background-login);
+}
+
+body.contact-page {
+  background-color: var(--color-background-contact);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
