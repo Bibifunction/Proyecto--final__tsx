@@ -1,0 +1,50 @@
+.filter {
+    padding: 0 16px;
+  }
+  
+  .filter__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+  }
+  
+  .filter__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .filter__chevron {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .filter__content {
+    display: none;
+    padding-bottom: 16px;
+  }
+  
+  .filter__content--open {
+    display: block;
+  }
+  
+  .filter__separator {
+    width: 210px;
+    height: 1px;
+    background-color: var(--separator-color);
+    margin-bottom: -10px;
+  }
+  
+  .filter__more,
+  .filter__less {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: left;
+    width: 100%;
+  }
+  

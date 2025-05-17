@@ -1,0 +1,27 @@
+.modal {
+    width: 250px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .modal__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .modal__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  .modal__close-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
