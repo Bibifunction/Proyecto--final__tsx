@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Header } from './components/header/Header';
-import { Hero } from './components/hero/Hero'; // Actualizado
+import { Hero } from './components/hero/Hero'; 
 import { MenuModal } from './components/menumodal/MenuModal';
 import { Pawpose } from './components/pawpose/Pawpose';
 import { Team } from './components/team/Team';

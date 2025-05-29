@@ -13,7 +13,7 @@ export const Team: React.FC = () => {
         <div className="team-members">
           <div className="team-member">
             <img
-              src="/src/assets/Bi.png"
+              src="/src/assets/Bita.png"
               alt="Team member"
               className="team-img"
             />
