@@ -1,0 +1,78 @@
+/* Variables */
+:root {
+  /* Colors */
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-black: hsla(0, 0%, 0%, 1);
+  --color-text-light: hsla(0, 0%, 47%, 1);
+  --color-line: hsla(0, 0%, 90%, 1);
+  --color-button-yellow: hsla(50, 100%, 55%, 1);
+  --color-button-brown: hsla(327, 11%, 40%, 1);
+  --color-message-bg: hsla(347, 100%, 94%, 1);
+  --color-team-bg: hsla(327, 11%, 40%, 1);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* Shadows */
+  --shadow-modal: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --font-family: "Atkinson Hyperlegible";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  padding-top: 3rem; /* For fixed header */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 75rem; /* 1200px */
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+
+
+  

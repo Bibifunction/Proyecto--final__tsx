@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paw Play - Dog Friendships</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img src="logo.svg" alt="Logo" class="header__logo">
+    <div class="header__actions">
+      <button class="button button--yellow">Create event</button>
+      <a href="#" class="header__sign-in">Sign in</a>
+      <button class="header__menu-toggle" id="menuToggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="4" width="24" height="2" fill="black"/>
+          <rect y="11" width="24" height="2" fill="black"/>
+          <rect y="18" width="24" height="2" fill="black"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Modal -->
+  <div class="menu-modal" id="menuModal">
+    <div class="menu-modal__content">
+      <button class="menu-modal__close" id="menuClose">
+        <img src="close-thick.svg" alt="Close" class="menu-modal__close-icon">
+      </button>
+      <div class="menu-modal__items">
+        <!-- Grupo 1: My account y My events -->
+        <div class="menu-modal__group">
+          <a href="#" class="menu-modal__item">My account</a>
+          <a href="#" class="menu-modal__item">My events</a>
+        </div>
+        <div class="menu-modal__separator"></div>
+        
+        <!-- Grupo 2: Create event -->
+        <div class="menu-modal__group">
+          <a href="#" class="menu-modal__item">Create event</a>
+        </div>
+        <div class="menu-modal__separator"></div>
+        
+        <!-- Grupo 3: About us y Contact us -->
+        <div class="menu-modal__group">
+          <a href="#" class="menu-modal__item">About us</a>
+          <a href="#" class="menu-modal__item">Contact us</a>
+        </div>
+        <div class="menu-modal__separator"></div>
+        
+        <!-- Grupo 4: Log out -->
+        <div class="menu-modal__group">
+          <a href="#" class="menu-modal__item">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="about-tag">
+          <span class="dot"></span>
+          <span class="label-text">About us</span>
+        </div>
+        
+        <div class="main-title-container">
+          <h1 class="main-title">We fetch friendships by bringing pups and people together for tail-wagging adventures</h1>
+        </div>
+      </div>
+      
+      <div class="main-image-container">
+        <img src="image.png" alt="Dogs on leashes" class="main-image">
+      </div>
+      
+      <!-- Our Pawpose Section -->
+      <div class="pawpose-section">
+        <div class="pawpose-tag">
+          <span class="dot"></span>
+          <span class="label-text">Our pawpose</span>
+        </div>
+        
+        <div class="info-items">
+          <div class="info-item">
+            <h3 class="info-title">Unleashing connections</h3>
+            <p class="info-text">We make it easy fot pups and their humans to meet, play, and build lifelong friendships.</p>
+            <div class="separator"></div>
+          </div>
+          
+          <div class="info-item">
+            <h3 class="info-title">Move waggily, love wildly</h3>
+            <p class="info-text">No more lonely walks! We connect dog lovers for tail-wagging meetups anytime, anywhere.</p>
+            <div class="separator"></div>
+          </div>
+          
+          <div class="info-item">
+            <h3 class="info-title">Meet, greet, stay</h3>
+            <p class="info-text">Because life's better when shared-especially with paws, barks, and happy xoomies.</p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <!-- Team Section -->
+      <div class="team-section">
+        <div class="team-container">
+          <div class="team-tag">
+            <span class="dot dot--yellow"></span>
+            <span class="label-text label-text--white">Our team</span>
+          </div>
+          
+          <div class="team-members">
+            <div class="team-member">
+              <img src="Bita.png" alt="Team member" class="team-img">
+            </div>
+            <div class="team-member">
+              <img src="Joan.png" alt="Team member" class="team-img">
+            </div>
+            <div class="team-member">
+              <img src="Alvaro.png" alt="Team member" class="team-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Paw Code Section -->
+      <div class="pawcode-section">
+        <div class="pawcode-tag">
+          <span class="dot"></span>
+          <span class="label-text">The paw code</span>
+        </div>
+        
+        <div class="code-items">
+          <div class="code-item">
+            <h3 class="code-title">Paw first</h3>
+            <p class="code-text">Happy pups, happy people. That's our priority.</p>
+            <div class="separator"></div>
+          </div>
+          
+          <div class="code-item">
+            <h3 class="code-title">Play together</h3>
+            <p class="code-text">Friendships are better with wagging tails.</p>
+            <div class="separator"></div>
+          </div>
+          
+          <div class="code-item">
+            <h3 class="code-title">Stay pawsitive</h3>
+            <p class="code-text">We believe in good wibes and good doggos.</p>
+            <div class="separator"></div>
+          </div>
+          
+          <div class="code-item">
+            <h3 class="code-title">Unleash joy</h3>
+            <p class="code-text">MEvery meetup is a chance for zoomies and fun.</p>
+            <div class="separator"></div>
+          </div>
+          
+          <div class="code-item">
+            <h3 class="code-title">Fetch pawsibility</h3>
+            <p class="code-text">Building a world where all dogs (and humasn) belong.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Message Section -->
+      <div class="message-container">
+        <p class="message-text">
+          Three humans, one big idea, and countless wagging tails! As dog lovers, we knew playdates aren't just for kids—pups need them too! So we created Paw Play, a place where furry friends (and their humans) can meet, run, and have a pawsome time. Because, let's be honest... life is better with barks, zoomies, and new packmates!
+        </p>
+      </div>
+      
+      <!-- Contact Section -->
+      <div class="contact-section">
+        <div class="contact-text-container">
+          <p class="contact-title">Want to know more about us or the project?</p>
+          <p class="contact-subtitle">Get in touch!</p>
+        </div>
+        <button class="button button--yellow">Contact us</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Contenido del footer -->
+  </footer>
+
+  <script>
+    // Menu toggle functionality
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const menuModal = document.getElementById('menuModal');
+
+    menuToggle.addEventListener('click', () => {
+      menuModal.classList.add('menu-modal--active');
+    });
+
+    menuClose.addEventListener('click', () => {
+      menuModal.classList.remove('menu-modal--active');
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
