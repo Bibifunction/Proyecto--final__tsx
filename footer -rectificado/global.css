@@ -1,0 +1,37 @@
+:root {
+    /* Tipografía */
+    --font-family: 'Atkinson Hyperlegible', sans-serif;
+
+       /* Font Sizes específicos para Footer */
+    --footer-logo-size: 60px;
+    --footer-title-size: 22px;
+    --footer-link-size: 18px;
+    --footer-bottom-size: 16px;
+
+        /* Font Weights */
+     --font-weight-extra-light:200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+
+
+     /* Colores del Footer */
+    --footer-main-bg: hsla(195, 29%, 97%, 100%);
+    --footer-bottom-bg: hsla(213, 100%, 93%, 100%);
+    --footer-logo-color: hsla(0, 0%, 0%, 100%);
+    --footer-title-color: hsla(210, 10%, 12%, 100%);
+    --footer-link-color: hsla(206, 7%, 45%, 100%);
+    --footer-bottom-text-color: hsla(0, 0%, 0%, 100%);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
