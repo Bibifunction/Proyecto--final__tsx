@@ -1,0 +1,99 @@
+/* Variables globales - aspectos generales */
+:root {
+    /* Tipografía */
+    --font-family: 'Atkinson Hyperlegible', sans-serif;
+    
+    /* Font Sizes */
+    --font-size-xsmall: 12px;
+    --font-size-small: 18px;
+    --font-size-medium: 20px;
+    --font-size-large: 22px;
+    --font-size-xlarge: 48px;
+    --font-size-xxlarge: 80px;
+     --font-size-social-title: 55px;
+    --font-size-social-subtitle: 24px;
+
+    /* Font Sizes para Key Features */
+  --key-features-card-title-size: 28px;
+  --key-features-card-subtitle-size: 16px;
+
+   /* Font Sizes para Footer */
+    --footer-logo-size: 60px;
+    --footer-title-size: 22px;
+    --footer-link-size: 18px;
+
+       /* Font Weights */
+     --font-weight-extra-light:200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+
+        /* Border Radius */
+     --border-radius-xsmall: 14px;
+    --border-radius-small: 25px;
+    --border-radius-large: 50px;
+    --border-radius-circle: 150px;
+
+       /* Colores del header */
+    --button-color: hsla(50, 100%, 55%, 100%);
+    --button-text-color: hsla(210, 10%, 12%, 100%);
+    --header-bg-color: hsla(0, 0%, 100%, 100%);
+
+    /* Colores del hero - Gradiente rosado */
+    --hero-gradient-start: hsla(0, 0%, 100%, 100%);
+    --hero-gradient-middle: hsla(325, 71%, 91%, 100%);
+    --hero-gradient-end: hsla(323, 67%, 80%, 100%);
+    --hero-text-color: hsla(210, 10%, 12%, 100%);
+
+       /* Colores de How it works */
+    --how-it-works-bg: hsla(0, 0%, 100%, 100%);
+    --how-it-works-title-color: hsla(0, 0%, 0%, 100%);
+    --how-it-works-number-bg: hsla(323, 67%, 80%, 100%);
+    --how-it-works-number-color: hsla(0, 0%, 0%, 100%);
+    --how-it-works-step-title-color: hsla(0, 0%, 0%, 100%);
+    --how-it-works-step-subtitle-color: hsla(204, 9%, 32%, 100%);
+
+     /* Colores de Key Features */
+  --key-features-bg: hsla(195, 22%, 93%, 100%);
+  --key-features-title-color: hsla(0, 0%, 0%, 100%);
+  --key-features-card-bg: hsla(0, 0%, 100%, 100%);
+  --key-features-card-title-color: hsla(0, 0%, 0%, 100%);
+  --key-features-card-subtitle-color: hsla(204, 9%, 32%, 100%);
+  --key-features-mockup-bg: hsla(213, 48%, 49%, 100%);
+  --icon-magnify-color: hsla(210, 10%, 12%, 100%);
+  --icon-tennis-color: hsla(324, 65%, 69%, 100%);
+  --icon-save-color: hsla(324, 65%, 69%, 100%);
+  --icon-dog-color: hsla(210, 10%, 12%, 100%);
+
+   /* Colores de la sección de testimonios */
+  --opinion-section-bg: hsla(0, 0%, 100%, 100%);
+  --opinion-text-color: hsla(0, 0%, 0%, 100%);
+  --opinion-card-bg: hsla(0, 0%, 100%, 100%);
+
+   /* Colores de Social Life */
+  --social-life-gradient-start: hsla(51, 100%, 85%, 10%);
+  --social-life-gradient-end: hsla(51, 100%, 85%, 100%);
+  --social-life-text-color: hsla(210, 10%, 12%, 100%);
+  --social-life-button-bg: hsla(320, 91%, 35%, 100%);
+  --social-life-button-text: hsla(0, 0%, 100%, 100%);
+
+      /* Colores del Footer */
+    --footer-main-bg: hsla(195, 29%, 97%, 100%);
+    --footer-bottom-bg: hsla(213, 100%, 93%, 100%);
+    --footer-logo-color: hsla(0, 0%, 0%, 100%);
+    --footer-title-color: hsla(210, 10%, 12%, 100%);
+    --footer-link-color: hsla(206, 7%, 45%, 100%);
+    --footer-bottom-text-color: hsla(0, 0%, 0%, 100%);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    line-height: 1.6;
+}

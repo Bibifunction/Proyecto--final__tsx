@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="logo.svg" alt="Logo" class="header__logo-img">
+            </div>
+            <div class="header__actions">
+                <button class="header__button">Join now</button>
+            </div>
+        </div>
+
+      <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Connect your dog with new friends</h1>
+                <p class="hero__subtitle">Discover nearby meetups, connect with dog lovers, and give your pup the social life they deserve.</p>
+                <button class="hero__button">Start your journey</button>
+            </div>
+            <div class="hero__mockup">
+                <div class="hero__phone">
+                    <video class="hero__video" preload="none" autoplay muted loop playsInline>
+                        <source src="webvideo.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+    <h2 class="how-it-works__title">How it works?</h2>
+    
+    <div class="how-it-works__container">
+        <div class="how-it-works__mockup">
+            <img src="mockup1.png" alt="Phone Mockup" class="how-it-works__mockup-img">
+            <div class="how-it-works__phone">
+                <img src="IMG-1.png" alt="Create your dog's profile" class="how-it-works__screen how-it-works__screen--active" data-screen="1">
+                <img src="IMG-2.png" alt="Find meetups near you" class="how-it-works__screen" data-screen="2">
+                <img src="IMG-3.png" alt="Socialize, play, connect" class="how-it-works__screen" data-screen="3">
+            </div>
+        </div>
+        
+        <div class="how-it-works__content">
+            <div class="how-it-works__step how-it-works__step--active" data-step="1">
+                <div class="how-it-works__number">1</div>
+                <h3 class="how-it-works__step-title">Create your dog's profile</h3>
+                <p class="how-it-works__step-subtitle">Customize it with breed, size, gender, description, picture...</p>
+            </div>
+            
+            <div class="how-it-works__step" data-step="2">
+                <div class="how-it-works__number">2</div>
+                <h3 class="how-it-works__step-title">Find meetups near you</h3>
+                <p class="how-it-works__step-subtitle">Filter by location, type of activity, date...</p>
+            </div>
+            
+            <div class="how-it-works__step" data-step="3">
+                <div class="how-it-works__number">3</div>
+                <h3 class="how-it-works__step-title">Socialize, play, connect</h3>
+                <p class="how-it-works__step-subtitle">Meet other dog owners and build a happy social routine for your pup.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section class="key-features">
+        <h2 class="key-features__title">Key features</h2>
+        
+        <div class="key-features__container">
+            <!-- Card 1: Smart filters -->
+            <div class="key-features__card key-features__card--small" data-tilt>
+                <img src="magnify.png" alt="Magnify" class="key-features__icon key-features__icon--magnify">
+                <div class="key-features__content">
+                    <h3 class="key-features__card-title">Smart filters</h3>
+                    <p class="key-features__card-subtitle">Easily find events that match your dog's personality and needs.</p>
+                </div>
+            </div>
+
+            <!-- Card Central: Mockup -->
+            <div class="key-features__card key-features__card--large">
+                <img src="key-features.png" alt="Phone Mockup" class="key-features__mockup" id="phone-mockup">
+            </div>
+
+            <!-- Card 2: Activities they'll love -->
+            <div class="key-features__card key-features__card--small" data-tilt>
+                <img src="tennis-ball.png" alt="Tennis Ball" class="key-features__icon key-features__icon--tennis">
+                <div class="key-features__content">
+                    <h3 class="key-features__card-title">Activities they'll love</h3>
+                    <p class="key-features__card-subtitle">From playdates to chill park walks, discover events that suit your dog's mood and preferences.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Save your favorites -->
+            <div class="key-features__card key-features__card--small" data-tilt>
+                <img src="content-save.png" alt="Save" class="key-features__icon key-features__icon--save">
+                <div class="key-features__content">
+                    <h3 class="key-features__card-title">Save your favorites</h3>
+                    <p class="key-features__card-subtitle">Never miss a great plan. Save events you love and view them anytime.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Calm & friendly space -->
+            <div class="key-features__card key-features__card--small" data-tilt>
+                <img src="dog.png" alt="Dog" class="key-features__icon key-features__icon--dog">
+                <div class="key-features__content">
+                    <h3 class="key-features__card-title">Calm & friendly space</h3>
+                    <p class="key-features__card-subtitle">Our community is designed to create stress-free, positive experiences for every pup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Sección de Testimonios -->
+    <section class="opinion-section">
+        <h2 class="opinion-section__title">What dog owners are saying</h2>
+        
+        <div class="opinion-section__container">
+            <!-- Fila 1 -->
+            <div class="opinion-card opinion-card--rotate-1">
+                <p class="opinion-card__text">Finding local events that suit my dog's energy level has made our walks way more exciting!</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Liam.webp" alt="Liam" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Liam</span>
+                </div>
+            </div>
+            
+            <div class="opinion-card opinion-card--rotate-2">
+                <p class="opinion-card__text">My shy pup finally made friends. The vibe is so welcoming and calm.</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Oliver.webp" alt="Oliver" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Oliver</span>
+                </div>
+            </div>
+            
+            <div class="opinion-card opinion-card--rotate-3">
+                <p class="opinion-card__text">The best part is how easy it is to join or create an event. Amazing website!</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Owen.webp" alt="Owen" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Owen</span>
+                </div>
+            </div>
+            
+            <!-- Fila 2 -->
+            <div class="opinion-card opinion-card--rotate-4">
+                <p class="opinion-card__text">I love how easy it is to filter by breed and activity. It saves me so much time.</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Ethan.webp" alt="Ethan" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Ethan</span>
+                </div>
+            </div>
+            
+            <div class="opinion-card opinion-card--rotate-5">
+                <p class="opinion-card__text">My dog has become so much more social since we started using this app!</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Jordan.webp" alt="Jordan" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Jordan</span>
+                </div>
+            </div>
+            
+            <div class="opinion-card opinion-card--rotate-6">
+                <p class="opinion-card__text">The community here is so supportive and friendly. We've made great friends!</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Samantha.webp" alt="Samantha" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Samantha</span>
+                </div>
+            </div>
+            
+            <!-- Fila 3 -->
+            <div class="opinion-card opinion-card--rotate-7">
+                <p class="opinion-card__text">I've noticed such a positive change in my dog's behavior since we started socializing more.</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Olivia.webp" alt="Olivia" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Olivia</span>
+                </div>
+            </div>
+            
+            <div class="opinion-card opinion-card--rotate-8">
+                <p class="opinion-card__text">The variety of events available is amazing. There's something for every dog!</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Emma.webp" alt="Emma" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Emma</span>
+                </div>
+            </div>
+            
+            <div class="opinion-card opinion-card--rotate-9">
+                <p class="opinion-card__text">This app has completely transformed our daily routine. We look forward to our walks now!</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Charlotte.webp" alt="Charlotte" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Charlotte</span>
+                </div>
+            </div>
+            
+            <!-- Fila 4 -->
+            <div class="opinion-card opinion-card--rotate-10">
+                <p class="opinion-card__text">The location-based search feature is so convenient. We've discovered so many new places!</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Emily.webp" alt="Emily" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Emily</span>
+                </div>
+            </div>
+            
+            <div class="opinion-card opinion-card--rotate-11">
+                <p class="opinion-card__text">I love how the app matches dogs by temperament—meetups are way more fun.</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Riley.webp" alt="Riley" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Riley</span>
+                </div>
+            </div>
+            
+            <div class="opinion-card opinion-card--rotate-12">
+                <p class="opinion-card__text">As a new dog owner, this community has been invaluable for learning and support.</p>
+                <div class="opinion-card__profile">
+                    <div class="opinion-card__image-container">
+                        <img src="Ava.webp" alt="Ava" class="opinion-card__image">
+                    </div>
+                    <span class="opinion-card__name">Ava</span>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Sección Social Life -->
+    <section class="social-life">
+        <div class="social-life__container">
+            <div class="social-life__mockup">
+                <img src="social-mockup.png" alt="Social Life Mobile App" class="social-life__mockup-img">
+            </div>
+            
+            <div class="social-life__content">
+                <h2 class="social-life__title">Give your dog the social life they deserve</h2>
+                <p class="social-life__subtitle">No dowloads. No preassure. Just happy tails.</p>
+                <button class="social-life__button">Try it for free</button>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <h2 class="footer__title">PawPlay</h2>
+            
+            <div class="footer__links">
+                <div class="footer__section">
+                    <h3 class="footer__section-title">Navigation</h3>
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link">About us</a>
+                    <a href="#" class="footer__link">Contact us</a>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__section-title">Your PawPlay</h3>
+                    <a href="#" class="footer__link">My account</a>
+                    <a href="#" class="footer__link">My events</a>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__section-title">Follow us</h3>
+                    <div class="footer__social-links">
+                        <a href="#" class="footer__link footer__social-link">
+                            <img src="instagram.png" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="#" class="footer__link footer__social-link">
+                            <img src="twitter.png" alt="Twitter" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Sección Legal del Footer -->
+    <div class="footer__legal">
+        <div class="footer__legal-container">
+            <div class="footer__legal-links">
+                <a href="#" class="footer__legal-link">Privacy policy</a>
+                <a href="#" class="footer__legal-link">Terms of service</a>
+                <a href="#" class="footer__legal-link">Cookies</a>
+            </div>
+            <p class="footer__copyright">©2025, PawPlay. All rights reserved.</p>
+        </div>
+    </div>
+
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const steps = document.querySelectorAll('.how-it-works__step');
+            const screens = document.querySelectorAll('.how-it-works__screen');
+            let currentStep = 0;
+            
+            function showStep(stepIndex) {
+                // Remover clase activa de todos
+                steps.forEach(step => step.classList.remove('how-it-works__step--active'));
+                screens.forEach(screen => screen.classList.remove('how-it-works__screen--active'));
+                
+                // Activar el paso actual
+                steps[stepIndex].classList.add('how-it-works__step--active');
+                screens[stepIndex].classList.add('how-it-works__screen--active');
+            }
+            
+            // Inicializar con el primer paso
+            showStep(0);
+            
+            // Cambiar automáticamente cada 3 segundos
+            setInterval(() => {
+                currentStep = (currentStep + 1) % steps.length;
+                showStep(currentStep);
+            }, 3000);
+
+             // Tilt effect - key features cards
+    const tiltCards = document.querySelectorAll('[data-tilt]');
+    
+    tiltCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const cardRect = card.getBoundingClientRect();
+            const cardCenterX = cardRect.left + cardRect.width / 2;
+            const cardCenterY = cardRect.top + cardRect.height / 2;
+            
+            const mouseX = e.clientX - cardCenterX;
+            const mouseY = e.clientY - cardCenterY;
+            
+            const rotateX = (mouseY / cardRect.height) * -20; // Reducido de -30 a -20
+            const rotateY = (mouseX / cardRect.width) * 20;   // Reducido de 30 a 20
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+        });
+    });
+
+            // Hover effect para las imágenes de testimonios
+            const opinionImages = document.querySelectorAll('.opinion-card__image');
+            
+            opinionImages.forEach(image => {
+                image.addEventListener('mouseenter', () => {
+                    image.style.transform = 'scale(1.15)';
+                });
+                
+                image.addEventListener('mouseleave', () => {
+                    image.style.transform = 'scale(1)';
+                });
+            });
+        });
+
+    </script>           
+
+</body>
+</html>
